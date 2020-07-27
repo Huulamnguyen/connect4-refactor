@@ -59,7 +59,7 @@ class Game {
     const piece = document.createElement('div');
     piece.classList.add('piece');   
     piece.style.backgroundColor = this.currPlayer.color;    
-    piece.style.top = -50 * (y + 2);  
+    piece.style.top = `${ -50 * (y + 2)}px`;  
     const spot = document.getElementById(`${y}-${x}`);
     spot.append(piece);
   };
@@ -69,7 +69,7 @@ class Game {
     this.gameIsRunning = false; 
     setTimeout(function(){
       alert(msg);
-    }, 1000);  
+    }, 1500);  
   };
 
   //* handleClick() function: handle click of column top to play piece:
@@ -153,7 +153,9 @@ startBtn.addEventListener('click', () => {
 const resetBtn = document.getElementById("reset-btn");
 resetBtn.addEventListener('click', () => { 
   const board = document.getElementById('board');
-    board.innerHTML = ''; 
+    board.innerHTML = '';
+  const startBtn = document.getElementById('start-btn');
+    startBtn.innerText = "Start Game";
 });
 
 

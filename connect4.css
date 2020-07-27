@@ -1,20 +1,55 @@
+/* Import Google Font Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+  font-family: 'Rubik', sans-serif;  
+}
 
 #header{
+  color: black;
   text-align: center;
+  font-family: 'Rubik', sans-serif;
 }
 
-#game {
-  position: relative;
+input {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: lightgray;  
 }
+
+#input {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+  font-size: 1em;
+}
+
+#btn {
+  text-align: center;
+  margin-bottom: 20px;  
+}
+
+button {
+  background-color: #FF9671;
+  width: 7em;
+  height: 2em;
+  margin: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
 /* game board table */
 #board{
   margin: 0 auto;     
 }
 
 #board td {
-  width: 50px;
-  height: 50px;
-  border: solid 1px #666;
+  width: 4em;
+  height: 4em;
+  border: solid 5px black;
+  background-color: #4E8397;
 }
 
 /* pieces are div within game table cells: draw as colored circles */
@@ -45,9 +80,9 @@
 /* column-top is table row of clickable areas for each column */
 
 #column-top td {
-  border: dashed 1px lightgray;
+  border: dashed 5px black;
 }
 
 #column-top td:hover {
-  background-color: gold;
+  background-color: #FFC75F;
 }
