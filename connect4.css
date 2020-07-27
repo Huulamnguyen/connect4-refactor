@@ -1,6 +1,14 @@
+
+#header{
+  text-align: center;
+}
+
+#game {
+  position: relative;
+}
 /* game board table */
 #board{
-  margin: 0 auto;
+  margin: 0 auto;     
 }
 
 #board td {
@@ -16,15 +24,23 @@
   width: 80%;
   height: 80%;
   border-radius: 50%;
+  position: relative;
+  animation: fall 2s ease-in-out forwards;
 }
 
-.piece.p1 {
+@keyframes fall {
+  100% {
+    top: 0;
+  }
+}
+
+/* .piece.p1 {
   background-color: red;
 }
 
 .piece.p2 {
   background-color: blue;
-}
+} */
 
 /* column-top is table row of clickable areas for each column */
 
